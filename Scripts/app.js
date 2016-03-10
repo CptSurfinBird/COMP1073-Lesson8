@@ -4,12 +4,19 @@
 |"use strict";
 
 var myVariable = "hello";
-console.log("myVariable");
+console.log("myVariable" + myVariable);
 
-var myArray = [];
+var myArray = [
+	"Jacob Gittings",
+	"19 This-street-does-not-exist drive",
+	"Barrie",
+	"Ontario",
+	22,
+	true
+];
 
-myArray.push("my first greeting");
-myArray.push("my second greeting");
-console.log(myArray[1]);
+for(var index=0; index < myArray.length; index++) {
+	console.log(myArray[index]);
+}
 
 })();
